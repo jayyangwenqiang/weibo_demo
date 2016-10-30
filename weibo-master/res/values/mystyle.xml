@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+<!-- android:drawableTop="@drawable/icon_1_d"
+                android:button="@null"
+                android:text="首页"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"  -->
+   
+
+</resources>

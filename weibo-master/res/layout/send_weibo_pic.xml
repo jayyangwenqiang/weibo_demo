@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/rlp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#11000000"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/sendweibo_tv_cancalp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:text="取消"
+            android:textColor="@color/main_text_color"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_userp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="发微博"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/sendweio_bt_sendp"
+                android:layout_width="60dp"
+                android:layout_height="35dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/sendbt_enable"
+                android:gravity="center"
+                android:text="发送"
+                android:textColor="@color/main_text_color"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rlp" >
+
+        <EditText
+            android:id="@+id/sendweibo_et_contentp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:gravity="top"
+            android:hint="分享新鲜事..."
+            android:inputType="textMultiLine"
+            android:minLines="1"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/sendweibo_gv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/compose_pic_add_highlighted" />
+
+        <RelativeLayout
+            android:id="@+id/weibowithpic_container"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_centerInParent="true" >
+
+            <ImageView
+                android:id="@+id/weibo_del_pic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/pic_delete" />
+
+            <ImageView
+                android:id="@+id/weibowithpic"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:scaleType="center" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

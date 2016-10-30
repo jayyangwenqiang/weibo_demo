@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <com.example.myweibo.widget.CircleImageView
+            android:id="@+id/comment_userheader"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/ic_launcher" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/comment_weibo_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:text="我想死的心都有了i"
+                android:textColor="#000000"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:id="@+id/comment_rep"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/statusdetail_icon_comment" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/comment_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:text="10-21 15:30"
+            android:textColor="#99000000"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/comment_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:text="评论描述"
+            android:textSize="15sp" />
+
+        <RelativeLayout
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:id="@+id/comment_rep_s"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#11000000" >
+
+            <TextView
+                android:textSize="15sp"
+                android:id="@+id/comment_weibo_auth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#5CACEE" />
+
+            <TextView
+                android:textSize="15sp"
+                android:layout_toRightOf="@id/comment_weibo_auth"
+                android:id="@+id/comment_rep_s_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="东北" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/u_RelativeLayout"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:background="@drawable/userbg" >
+
+                <CheckBox
+                    android:id="@+id/u_add"
+                    android:textSize="15sp"
+                    android:button="@null"
+                    android:textColor="@android:color/holo_red_light"
+                    android:gravity="center"
+                    android:background="@drawable/user_add_shape"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
+                    android:text="加关注" />
+
+                <com.example.myweibo.widget.CircleImageView
+                    android:id="@+id/u_usercenter_header"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="40dp" />
+
+                <TextView
+                    android:id="@+id/u_usercenter_user_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/u_usercenter_header"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@android:color/white"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:id="@+id/u_userinfo_gender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/u_usercenter_user_name"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@id/u_usercenter_user_name"
+                    android:src="@drawable/userinfo_icon_male" />
+
+                <ImageView
+                    android:id="@+id/u_userinfo_isvip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/u_userinfo_gender"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@id/u_userinfo_gender"
+                    android:src="@drawable/v_blue" />
+
+                <View
+                    android:id="@+id/u_view"
+                    android:layout_width="0.5dp"
+                    android:layout_height="13dp"
+                    android:layout_below="@id/u_usercenter_user_name"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="5dp"
+                    android:background="@android:color/darker_gray" />
+
+                <TextView
+                    android:id="@+id/u_userinfo_guanzhu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/u_view"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@id/u_view"
+                    android:textColor="@android:color/white"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/u_userinfo_fans"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/u_view"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/u_view"
+                    android:textColor="@android:color/white"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/u_userinfo_jianjie"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/u_view"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="8dp"
+                    android:singleLine="true"
+                    android:textColor="@android:color/white"
+                    android:textSize="13sp" />
+            </RelativeLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <include layout="@layout/u_info" />
+            </FrameLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

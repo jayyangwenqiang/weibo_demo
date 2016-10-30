@@ -1,0 +1,88 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <com.example.myweibo.widget.MyViewPager
+        android:id="@+id/main_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#66ffffff"
+        android:orientation="horizontal" >
+
+        <RadioGroup
+            android:id="@+id/main_rg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/main_home"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:button="@null"
+                android:checked="true"
+                android:drawableTop="@drawable/main_home_selector"
+                android:gravity="center"
+                android:text="首页"
+                android:textColor="@color/main_text_color" >
+            </RadioButton>
+
+            <RadioButton
+                android:id="@+id/main_msg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawableTop="@drawable/main_msg_selector"
+                android:gravity="center"
+                android:text="消息"
+                android:textColor="@color/main_text_color" >
+            </RadioButton>
+
+            <ImageView 
+                android:id="@+id/main_add"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/tabbar_compose_background_icon_add"
+                android:gravity="center"
+                android:textColor="@color/main_text_color" />
+
+            <RadioButton
+                android:id="@+id/main_search"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawableTop="@drawable/main_add_selector"
+                android:gravity="center"
+                android:text="发现"
+                android:textColor="@color/main_text_color" >
+            </RadioButton>
+
+            <RadioButton
+                android:id="@+id/main_user"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawableTop="@drawable/main_user_selector"
+                android:gravity="center"
+                android:text="我"
+                android:textColor="@color/main_text_color" >
+            </RadioButton>
+        </RadioGroup>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.example.myweibo.widget.MyDelAutoCompleteTextView
+        android:id="@+id/search_auto_et"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/search_select"
+        android:completionThreshold="1"
+        android:drawableLeft="@drawable/userinfo_navigationbar_search_highlighted"
+        android:hint="大家都在搜"
+        android:padding="5dp"
+        android:singleLine="true"
+        android:textSize="15sp" >
+    </com.example.myweibo.widget.MyDelAutoCompleteTextView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:background="#22000000" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:text="微博热搜榜" />
+
+        <Button
+            android:id="@+id/search_refrash"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/search_change"
+            android:text="换一批"
+            android:textColor="@color/main_text_color" />
+    </RelativeLayout>
+
+    <com.example.myweibo.widget.FlowLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp" >
+
+        <TextView
+            android:id="@+id/hot_tv_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/search_text_shape"
+            android:padding="10dp" />
+
+        <TextView
+            android:id="@+id/hot_tv_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/search_text_shape"
+            android:padding="10dp" />
+
+        <TextView
+            android:id="@+id/hot_tv_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/search_text_shape"
+            android:padding="10dp" />
+
+        <TextView
+            android:id="@+id/hot_tv_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/search_text_shape"
+            android:padding="10dp" />
+
+        <TextView
+            android:id="@+id/hot_tv_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/search_text_shape"
+            android:padding="10dp" />
+
+        <TextView
+            android:id="@+id/hot_tv_6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/search_text_shape"
+            android:padding="10dp" />
+
+        <TextView
+            android:id="@+id/hot_tv_7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/search_text_shape"
+            android:padding="10dp" />
+
+        <TextView
+            android:id="@+id/hot_tv_8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/search_text_shape"
+            android:padding="10dp" />
+
+        <TextView
+            android:id="@+id/hot_tv_9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/search_text_shape"
+            android:padding="10dp" />
+
+        <TextView
+            android:id="@+id/hot_tv_10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/search_text_shape"
+            android:padding="10dp" />
+    </com.example.myweibo.widget.FlowLayout>
+
+</LinearLayout>
